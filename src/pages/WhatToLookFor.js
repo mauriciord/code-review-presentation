@@ -4,7 +4,7 @@ import { Appear } from 'mdx-deck'
 import { space, width } from 'styled-system';
 import { Root, Center, Img } from '../components';
 
-import theme from '../theme';
+import { defaultTheme as theme } from '../theme';
 
 const Explanation = styled.span`
   font-size: 20px;
@@ -17,7 +17,8 @@ const List = styled.ul`
 `;
 const Item = styled.li`
   color: black;
-  margin: 2px 0;
+  margin: 3px 0;
+  font-size: 0.7em;
 `;
 
 const WhatToLookFor = () => (

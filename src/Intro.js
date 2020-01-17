@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Flex } from 'rebass';
-import theme from './theme';
+import { defaultTheme as theme } from './theme';
+
+// images
+import meImage from './img/me.jpg'
+import githubIcon from './img/github.png'
+import twitterIcon from './img/twitter.png'
+import icLogo from './img/ic-logo.png'
 
 const IconImage = styled.img`
   max-height: 60px;
@@ -15,7 +21,7 @@ const Link = styled.a`
 
 const Me = styled.img`
   max-width: 150px;
-  max-height: 150px; 
+  max-height: 150px;
 `;
 
 const MeName = styled.span`
@@ -76,23 +82,23 @@ const SocialMediaLink = ({ src, link, username }) => (
 export const Intro = () => (
   <Root>
     <Row>
-      <Me src={'./img/me.jpg'} />
+      <Me src={meImage} />
       <MeName>Mauricio R Duarte</MeName>
     </Row>
     <SpaceBetween>
       <SocialMediaLink
-        src={'./img/github.png'}
+        src={githubIcon}
         link={'https://github.com/mauriciord'}
         username={'@mauriciord'}
       />
       <SocialMediaLink
-        src={'./img/twitter.png'}
+        src={twitterIcon}
         link={'https://twitter.com/mauriciord'}
         username={'@mauriciord'}
       />
     </SpaceBetween>
     <Center>
-      <IclinicLogo src={'./img/ic-logo.png'} />
+      <IclinicLogo src={icLogo} />
     </Center>
     <Flex flex={1} alignItems='center' justifyContent='center' mt={30}>
       <MeName>Front End developer</MeName>

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import { space, width } from 'styled-system';
-import theme from './theme';
+import { defaultTheme as theme } from './theme';
+import coverImage from './img/code-review-cover.png'
 
 export const Root = styled.div([], {
   width: '50vw',
@@ -34,13 +35,13 @@ const Subtitle = styled.span`
 const MeName = styled.span`
   font-size: 30px;
   color: ${theme.colors.primary};
-  ${space} 
+  ${space}
 `;
 
 export const Cover = () => (
   <Root>
     <Center>
-      <Img src={'./img/code-review-cover.png'} width={450} />
+      <Img src={coverImage} width={450} />
       <Title mt={20}>How to apply a code code review</Title>
       <Subtitle mt={20}>Tips for better coexistence</Subtitle>
       <MeName mt={100}>Mauricio R Duarte</MeName>

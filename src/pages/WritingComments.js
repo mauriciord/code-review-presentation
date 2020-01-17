@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Appear } from 'mdx-deck'
-import { Img } from '../components'
+import { Img, Question } from '../components'
+
+import goodCommentImg from '../img/cl-comments/good-comment.png'
+import writingImg from '../img/writing-bible.jpg'
 
 export const Root = styled.div([], {
   width: '70vw',
@@ -24,20 +27,20 @@ const Text = styled.p`
 
 export const Cover = () => (
   <Root>
-   <Img src={'../img/writing-bible.jpg'} width={980} />
+   <Img src={writingImg} width={980} />
   </Root>
 )
 
 export const WritingCommentsCourtesy = () => (
   <Root>
     <div>
-      <h4>Courtesy</h4>
+      <Question>Courtesy</Question>
       <Text>Be sure that you are always making comments about the code and never making comments about the developer</Text>
     </div>
     <Appear>
       <div>
         <h5>Good</h5>
-        <Img src={'../img/cl-comments/good-comment.png'} width={750} />
+        <Img src={goodCommentImg} width={750} />
       </div>
     </Appear>
   </Root>
@@ -46,19 +49,19 @@ export const WritingCommentsCourtesy = () => (
 export const WritingCommentsRest = () => (
   <Root>
     <div>
-      <h4>Explain Why</h4>
+      <Question>Explain Why</Question>
       <Text>Helps the developer understand why you are making your comment.</Text>
     </div>
     <Appear>
       <div>
-        <h4>Giving Guidance</h4>
+        <Question>Giving Guidance</Question>
         <Text>
           In general, you should strike an appropriate balance between pointing out problems and providing direct
             guidance. You are not required to do a detailed design of a solution or write code for the developer.
         </Text>
       </div>
       <div>
-        <h4>Accepting Explanations</h4>
+        <Question>Accepting Explanations</Question>
         <Text>
           Ask a developer to explain a piece of code that you don’t understand.
         </Text>

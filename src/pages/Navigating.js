@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import { Appear } from 'mdx-deck'
 import { space, width } from 'styled-system';
 
-import theme from '../theme';
+import { defaultTheme as theme } from '../theme';
 
 export const Root = styled.div([], {
-  width: '70vw',
+  width: '80vw',
   height: '70vh',
 });
 

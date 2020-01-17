@@ -30,3 +30,17 @@ export const Center = styled.div`
 export const Img = styled.img`
   ${width}
 `;
+
+export const Text = styled.p`
+  color: slategray;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+`;
+
+export const Question = styled.p`
+  color: black;
+  font-size: 2.4rem;
+  margin: 0.8em 0 0.3em 0;
+  padding: 0;
+`

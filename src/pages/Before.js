@@ -4,7 +4,7 @@ import { Appear } from 'mdx-deck'
 import { space, width } from 'styled-system';
 import { Root, Split } from '../components';
 
-import theme from '../theme';
+import { defaultTheme as theme } from '../theme';
 
 const Img = styled.img`
   ${width}

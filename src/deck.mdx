@@ -1,5 +1,5 @@
 import { Head, Image, Appear } from 'mdx-deck'
-import { Split } from 'mdx-deck/layouts'
+import { Split } from 'mdx-deck'
 
 import { Cover } from './Cover';
 import { Intro } from './Intro';
@@ -16,8 +16,11 @@ import Speed, { Cover as SpeedCover } from './pages/Speed';
 import { Cover as WritingCover, WritingCommentsCourtesy, WritingCommentsRest } from './pages/WritingComments';
 import { WhatsNext } from './pages/Next';
 import { References } from './pages/References';
+import { Root, Center } from './components'
 
-export { default as theme } from './theme'
+import { defaultTheme } from './theme'
+
+export const theme = defaultTheme
 
 <Head>
   <title>How to apply a good code reviews</title>
@@ -40,28 +43,32 @@ export { default as theme } from './theme'
 
 # Overview
 
-<ul>
-    <Appear>
-        <li>
-            Code review as Mentoring
-        </li>
-        <li>
-            Code review principles
-        </li>
-        <li>
-            What to look for in code review
-        </li>
-        <li>
-            Examining and navigating a code review
-        </li>
-        <li>
-            Speed of a code review
-        </li>
-        <li>
-            How to write code review comments
-        </li>
-    </Appear>
-</ul>
+<Root>
+  <Center>
+    <ul>
+        <Appear>
+            <li>
+                Code review as Mentoring
+            </li>
+            <li>
+                Code review principles
+            </li>
+            <li>
+                What to look for in code review
+            </li>
+            <li>
+                Examining and navigating a code review
+            </li>
+            <li>
+                Speed of a code review
+            </li>
+            <li>
+                How to write code review comments
+            </li>
+        </Appear>
+    </ul>
+  </Center>
+</Root>
 
 ---
 
@@ -73,19 +80,23 @@ export { default as theme } from './theme'
 
 # Code review principles
 
-<ul>
-    <Appear>
-        <li>
-          Technical facts and data replace opinions and personal preferences.
-        </li>
-        <li>
-          The style guide is the absolute authority. If there is no previous style, accept the author’s.
-        </li>
-        <li>
-          Aspects of software design are almost never a pure style issue or just a personal preference.
-        </li>
-    </Appear>
-</ul>
+<Root>
+  <Center>
+    <ul>
+        <Appear>
+            <li>
+              Technical facts and data replace opinions and personal preferences.
+            </li>
+            <li>
+              The style guide is the absolute authority. If there is no previous style, accept the author’s.
+            </li>
+            <li>
+              Aspects of software design are almost never a pure style issue or just a personal preference.
+            </li>
+        </Appear>
+    </ul>
+  </Center>
+</Root>
 
 ---
 
@@ -145,9 +156,9 @@ export { default as theme } from './theme'
 
 ## Thank you
 
-<h3>We are hiring :]</h3>
-<p><a href="https://iclinic.workable.com">iClinic Workable</a></p>
+<a target="_blank" style="text-decoration:none; color: white; background-color: #2596D3; padding: 20px" href="https://iclinic.gupy.io">We are hiring :]</a>
 
 <h3>Want to contribute?</h3>
 <p><a href="https://github.com/mauriciord/code-review-presentation">Code review presentation repo</a></p>
+
 
