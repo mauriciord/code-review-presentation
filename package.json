@@ -15,8 +15,8 @@
     "build": "mdx-deck build src/deck.mdx",
     "image": "mdx-deck screenshot src/deck.mdx",
     "pdf": "npx website-pdf http://localhost:8000/print -o deck.pdf src/deck.mdx",
-    "publish:deck": "yarn build && gh-pages -d public",
-    "start": "mdx-deck src/deck.mdx"
+    "start": "mdx-deck src/deck.mdx",
+    "serve": "npx serve public"
   },
   "devDependencies": {
     "mdx-code": "^1.1.3",
